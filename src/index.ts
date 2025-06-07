@@ -34,5 +34,21 @@ function call(cb1: ()=> void){
 
 call(function(){console.log("learning typescript ")});
 
-
-
+//interface
+interface usertype{
+    name:string,
+    age:number
+}
+let user1:usertype={
+    name:"auisj",
+    age:12
+}
+let user: {
+    name: string;
+    age: number;
+}={
+name:"suhs",
+age:12
+}
+console.log(user.name)
+console.log(user1.age);
