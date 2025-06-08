@@ -39,6 +39,17 @@ interface usertype{
     name:string,
     age:number
 }
+type usertype1={  // types make you do or and usage 
+    name:string,
+    age:number | number
+}
+
+
+let user2:usertype1={
+name:"ayushman",
+age:12
+}
+
 let user1:usertype={
     name:"auisj",
     age:12

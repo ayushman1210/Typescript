@@ -28,6 +28,10 @@ function call(cb1) {
     setTimeout(cb1, 1000);
 }
 call(function () { console.log("learning typescript "); });
+let user2 = {
+    name: "ayushman",
+    age: 12
+};
 let user1 = {
     name: "auisj",
     age: 12
