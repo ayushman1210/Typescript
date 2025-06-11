@@ -66,5 +66,57 @@ class Manager implements Person{
     }
 }
 
+abstract class User5{
+    name:string ;
+    constructor(name: string){
+        this.name=name;
+    }
+
+    abstract greet (): string ;
+    hello(){
+        console.log("hello")
+    }
+}
+// we can write default function in the absteract class but not in the interfaces 
+class Employee extends User5{
+    name:string;
+constructor(name:string){
+    super(name)
+    this.name=name;
+}
+greet(){
+    return "hi"+this.name;
+}
+}
+// this is the way to define type 
+// type let you to do  union and intersection 
+type User6={
+name:string;
+startDate:Date;
+}
+
+type User7={
+    name:string;
+    department:string;
+};
+
+type Lead= User6 & User7
+
+let p:User6={
+    name:"ayushmna",
+    startDate: new Date()
+}
+
+let m:User7={
+    name:"ayush",
+    department:"It"
+}
+
+let q:Lead={
+    name:"ayushman",
+    startDate:new Date(),
+    department:"go"
+}
+
 let user4=new Manager("aysmsn",1)
-console.log(user4);
+console.log(user4);7
