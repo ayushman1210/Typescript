@@ -66,6 +66,10 @@ class Manager implements Person{
     }
 }
 
+
+let user4=new Manager("aysmsn",1)
+console.log(user4);
+
 abstract class User5{
     name:string ;
     constructor(name: string){
@@ -118,5 +122,23 @@ let q:Lead={
     department:"go"
 }
 
-let user4=new Manager("aysmsn",1)
-console.log(user4);7
+type Admin={
+    name:String,
+    password:string,
+    enter:Date
+}
+
+type citizen={
+name:string,
+password:string,
+enter:Date,
+}
+
+type register= citizen & Admin;
+
+let user8:register={
+    name:"ayusman",
+    password:"1231313",
+    enter:new Date()
+}
+
