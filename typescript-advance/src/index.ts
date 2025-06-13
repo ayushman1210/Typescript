@@ -22,3 +22,17 @@ type updateoptional= Partial<people1>
 function update(user:updateoptional){
 
 }
+
+/// readonly 
+type User2={
+  readonly  name:string,
+age:number,
+country:string
+}
+const obj={
+ name:"atush",
+    age:25,
+    country:"USA"
+}
+
+// on readonly method we can not assign any new value to the readonly variable
