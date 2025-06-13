@@ -11,14 +11,14 @@ let person=sum({name:"ayushmna", age:11}, {name:"ayush",age:13})
 console.log(person)
 
 interface people{
-       name:string,
+       name :string,
     age:number,
     email:string,
     password:string,
 }
 
 type people1=Pick<people,"name"|"password">
+type updateoptional= Partial<people1>
+function update(user:updateoptional){
 
-function update(user:people1){
-    
 }

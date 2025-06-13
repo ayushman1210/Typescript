@@ -58,5 +58,5 @@ function getAdultUsernames(users:o[]):string[] {
         .map(u => u.name);
 }
 
-console.log(getAdultUsernames(user13)); // Output: ["ayushmna"]
+console.log(getAdultUsernames(user13)); 
 

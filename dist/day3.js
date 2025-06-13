@@ -35,4 +35,4 @@ function getAdultUsernames(users) {
         .filter(u => u.age >= 18)
         .map(u => u.name);
 }
-console.log(getAdultUsernames(user13)); // Output: ["ayushmna"]
+console.log(getAdultUsernames(user13));
